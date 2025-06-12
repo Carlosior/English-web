@@ -1,0 +1,173 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #00796b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #004d40;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #00695c;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 2rem; /* espacio entre cards */
+  justify-items: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004d40;
+  color: white;
+}
+
+#imagen-perfil{
+    background-color: #004d40;
+    border-radius: 50%;   
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ffffff; /* Puedes cambiar el color según el fondo */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px;  
+}
+
+.animated-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ffffff;
+  width: 0;
+  animation: typing 3s steps(17, end) forwards, blink 0.7s step-end infinite;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0ch }
+  to { width: 17ch }  /* ← cantidad de caracteres del texto */
+}
+
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
